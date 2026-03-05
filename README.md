@@ -1,15 +1,3 @@
-What You Will Need - - - - - 
-Goal 
-Loom or OBS Studio 
-GitHub 
-ChatGPT or Alternatives 
-VS Code & AntiGravity  
-LinkedIn 
-You are going to build 38 Proof-of-skill micro-engineering tasks that will force :  - 
-JavaScript/Engineering thinking - - - 
-Explanation Discipline 
-AI Literacy 
-GitHub Consistency 
 
 Section 1 ( Variables, Strings, Conditionals ) 
 1. Age Category Checker 
