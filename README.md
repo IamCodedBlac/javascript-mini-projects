@@ -1,4 +1,8 @@
+# JavaScript Mini Projects
 
+This repository contains 38 JavaScript practice projects organized by learning stages.
+
+## Sections
 Section 1 ( Variables, Strings, Conditionals ) 
 1. Age Category Checker 
 2. Simple Password Strength Checker 
