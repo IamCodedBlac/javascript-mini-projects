@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="body-container">
+      <div class="main-container">
+        <div class="todo-container">
+          <div class="header-container">
+            <h1 class="header-topic">ToDo List</h1>
+            <span class="material-symbols-outlined"> lists </span>
+          </div>
+
+          <div class="form">
+            <div class="input-section">
+              <div class="minor-flex">
+                <input
+                  type="text"
+                  id="text-space"
+                  placeholder="Add your task"
+                />
+                <button id="plus-button">
+                  <span class="material-symbols-outlined"> add </span>
+                </button>
+                <div class="input-error" id="input-error"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="task-list-container">
+        <div id="task-list"></div>
+      </div>
+      <div
+        class="overlay-wrapper-container overlay-hidden"
+        id="overlay-wrapper-container"
+      >
+        <div class="overlay-container" id="overlay-container">
+          <div class="just-got-task-submitted">
+            <p></p>
+            <span id="close-button" class="material-symbols-outlined">
+              close
+            </span>
+          </div>
+
+          <div class="deadline-section">
+            <div class="deadline">
+              <span class="material-symbols-outlined"> calendar_month </span>
+              <p>Deadline</p>
+            </div>
+            <div class="selectdate-time">
+              <input id="date-and-time" type="datetime-local" />
+            </div>
+          </div>
+
+          <div class="activity-type-section">
+            <div class="activity-type">
+              <span class="material-symbols-outlined"> handshake </span>
+              <p>Activity Type</p>
+            </div>
+
+            <div class="activity-type-radio">
+              <div class="solo-radio solo-radio-only">
+                <input
+                  type="radio"
+                  name="activity"
+                  id="solo"
+                  value="solo"
+                  checked
+                />
+                <label for="solo"><span class="dot low"></span>Solo</label>
+              </div>
+              <div class="collaborative-radio">
+                <input
+                  type="radio"
+                  name="activity"
+                  id="collaborative"
+                  value="collaboration"
+                />
+                <label for="collaborative">Collaborative</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="collaborative-section-hidden" id="collaborative-section">
+            <label for="collaboration">Collaborators</label>
+            <input
+              type="text"
+              placeholder="Type a name and press Enter"
+              name="collaboration"
+              id="collaboration"
+            />
+            <div class="collab-chips" id="collab-chips"></div>
+          </div>
+
+          <div class="priority-section">
+            <div class="priority">
+              <span class="material-symbols-outlined"> priority </span>
+              <p>Priority</p>
+            </div>
+            <div class="priority-radio">
+              <div class="for-low">
+                <input
+                  type="radio"
+                  name="priority"
+                  id="priority-low"
+                  value="low"
+                />
+                <label for="priority-low">low</label>
+              </div>
+
+              <div class="for-medium">
+                <input
+                  type="radio"
+                  name="priority"
+                  id="priority-medium"
+                  value="medium"
+                  checked
+                />
+                <label for="priority-medium">medium</label>
+              </div>
+
+              <div class="for-high">
+                <input
+                  type="radio"
+                  name="priority"
+                  id="priority-high"
+                  value="high"
+                />
+                <label for="priority-high" class="priority-high">high</label>
+              </div>
+            </div>
+          </div>
+          <div class="notes-section">
+            <div class="notes">
+              <span class="material-symbols-outlined"> note_alt </span>
+              <p>Notes</p>
+            </div>
+            <div class="note-field">
+              <label for="description"></label>
+              <textarea
+                name="description"
+                rows="4"
+                cols="30"
+                id="for-discription"
+              ></textarea>
+            </div>
+          </div>
+          <div class="cancel-save-button">
+            <button class="cancel" id="cancel">Cancel</button>
+            <button class="save" id="save">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

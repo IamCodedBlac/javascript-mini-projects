@@ -1,0 +1,9 @@
+textarea {
+  width: 400px;
+  height: 150px;
+}
+
+pre {
+  background: #f4f4f4;
+  padding: 10px;
+}

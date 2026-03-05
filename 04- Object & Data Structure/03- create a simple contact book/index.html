@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Contact Book</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Simple Contact Book</h2>
+      <p class="hint">Add a contact, then search by name.</p>
+
+      <div class="section">
+        <h3>Add Contact</h3>
+        <input type="text" id="add-name" placeholder="Name (e.g. Alice)" />
+        <input
+          type="text"
+          id="add-phone"
+          placeholder="Phone (e.g. 08012345678)"
+        />
+        <button id="add-btn">Add Contact</button>
+      </div>
+
+      <div class="section">
+        <h3>Find Contact</h3>
+        <input type="text" id="find-name" placeholder="Enter name to search" />
+        <button id="find-btn">Find</button>
+      </div>
+
+      <div class="result-box">
+        <p class="label">Result:</p>
+        <p id="result" class="result">—</p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

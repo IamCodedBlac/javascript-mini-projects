@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="password-checker-container">
+        <div class="inner-container">
+          <h1>Password Strength Checker</h1>
+        </div>
+        <div class="mini-container">
+          <input
+            id="input-text"
+            class="input-field"
+            type="password"
+            placeholder="Input your password"
+          />
+        </div>
+        <div class="container-for-strength-checkers">
+          <progress id="strenght-bar" value="0" max="100"></progress>
+          <p id="strength-checker"></p>
+          <p id="char-rule" class="rule">
+            <i class="fa-solid fa-circle"></i> At least 8 characters
+          </p>
+          <p id="uppercase-rule" class="rule">
+            <i class="fa-solid fa-circle"></i> UpperCase letter
+          </p>
+          <p id="lowercase-rule" class="rule">
+            <i class="fa-solid fa-circle"></i> LowerCase letter
+          </p>
+          <p id="number-rule" class="rule">
+            <i class="fa-solid fa-circle"></i> Number
+          </p>
+          <p id="special-char-rule" class="rule">
+            <i class="fa-solid fa-circle"></i> Special Character
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

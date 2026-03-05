@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart Simulator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Shopping Cart Simulator</h2>
+      <p class="hint">
+        Add items, remove items, and calculate total using an object.
+      </p>
+
+      <div class="section">
+        <h3>Add Item</h3>
+        <input type="text" id="item-name" placeholder="Item name (e.g. rice)" />
+        <input type="number" id="item-price" placeholder="Price (e.g. 2000)" />
+        <button id="add-btn">Add Item</button>
+      </div>
+
+      <div class="section">
+        <h3>Remove Item</h3>
+        <input
+          type="text"
+          id="remove-name"
+          placeholder="Item name to remove (e.g. rice)"
+        />
+        <button id="remove-btn">Remove Item</button>
+      </div>
+
+      <div class="section">
+        <h3>Actions</h3>
+        <button id="total-btn">Calculate Total</button>
+      </div>
+
+      <div class="result-box">
+        <p class="label">Cart Contents:</p>
+        <pre id="cart-view" class="result">—</pre>
+      </div>
+
+      <div class="result-box">
+        <p class="label">Total:</p>
+        <p id="result" class="result">—</p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

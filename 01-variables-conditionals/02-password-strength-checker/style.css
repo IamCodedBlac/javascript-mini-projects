@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto 0;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.password-checker-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.input-field {
+  width: 20rem;
+  padding: 1rem 1rem;
+  width: 100%;
+}
+
+.rule i {
+  color: grey;
+}
+
+.rule.pass i {
+  color: green;
+}
+
+#strenght-bar {
+  width: 100%;
+  height: 3rem;
+  padding: 2rem 0;
+}

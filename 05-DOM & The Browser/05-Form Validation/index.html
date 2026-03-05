@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h2>Form Validation</h2>
+
+    <form id="signup-form">
+      <input id="name" type="text" placeholder="Full name" />
+      <small id="name-error"></small>
+
+      <input id="email" type="text" placeholder="Email" />
+      <small id="email-error"></small>
+
+      <input id="password" type="password" placeholder="Password" />
+      <small id="password-error"></small>
+
+      <input id="confirm" type="password" placeholder="Confirm password" />
+      <small id="confirm-error"></small>
+
+      <button id="submit-btn" type="submit">Create Account</button>
+    </form>
+
+    <p id="success"></p>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

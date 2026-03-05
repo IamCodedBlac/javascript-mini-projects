@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Object Creator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Create Student Object</h2>
+      <p class="hint">Enter a student's details and generate the object.</p>
+
+      <input type="text" id="name" placeholder="Student Name (e.g. Munir)" />
+      <input type="number" id="age" placeholder="Age (e.g. 20)" />
+      <input type="text" id="grade" placeholder="Grade (e.g. A)" />
+
+      <button id="create-btn">Create Object</button>
+
+      <div class="result-box">
+        <p class="label">Result:</p>
+        <pre id="result" class="result">—</pre>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
